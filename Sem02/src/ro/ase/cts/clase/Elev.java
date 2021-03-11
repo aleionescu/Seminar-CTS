@@ -28,6 +28,10 @@ public class Elev extends Aplicant {
 		return sumaFinantare;
 	}
 
+	public static float getSumaFinantare() {
+		return sumaFinantare;
+	}
+
 	public static void setSumaFinantare(float sumaFinantare) {
 		Elev.sumaFinantare = sumaFinantare;
 	}

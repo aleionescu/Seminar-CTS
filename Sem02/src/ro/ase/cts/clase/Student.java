@@ -15,6 +15,10 @@ public class Student extends Aplicant {
 		return sumaFinantare;
 	}
 
+	public static float getSumaFinantare() {
+		return sumaFinantare;
+	}
+
 	public static void setSumaFinantare(float sumaFinantare) {
 		Student.sumaFinantare = sumaFinantare;
 	}
