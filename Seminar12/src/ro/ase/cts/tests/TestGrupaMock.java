@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import jdk.jfr.Category;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.IStudent;
 import ro.ase.cts.tests.mocks.DummyStudent;
@@ -29,6 +30,7 @@ public class TestGrupaMock {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testGetPromovabilitateFakeStudent() {
 		Grupa grupa = new Grupa(1081);
 		for(int i=0;i<8;i++) {

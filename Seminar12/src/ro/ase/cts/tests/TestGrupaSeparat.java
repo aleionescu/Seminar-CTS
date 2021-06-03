@@ -7,11 +7,13 @@ import java.time.Duration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import jdk.jfr.Category;
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.IStudent;
 import ro.ase.cts.clase.Student;
+import ro.ase.cts.tests.categorii.*;
 
-class TestGrupaSeparat {
+public class TestGrupaSeparat {
 	private Grupa grupa;
 	@BeforeEach
 	public void setup() {
@@ -25,6 +27,7 @@ class TestGrupaSeparat {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class,TesteUrgenteCategory.class)
 	public void testGetPromovabilitatePerformance() {
 		assertTimeout(Duration.ofMillis(500),() -> {grupa.getPromovabilitate();});
 	}
